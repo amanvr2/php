@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> form</title>
+    <link rel="stylesheet" href="login1.css">
+  </head>
+<body>
+    <ul>
+        <li><a href="training.html"> Home</a></li>
+    </ul>
+    <h1> LOG IN PAGE</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="login">
+        <label> Username :</label>
+        <input type="text" name="username" placeholder="username@email.com" required><br>
+        <br>
+        <label> Password :</label>
+        <input type="password" name="pswrd" value=""required><br><br>
+       
+    </div>
+    <input type="submit" name="submit" value="log in" class="button">
+    </body>
+</html>
+<?php
+$con=mysqli_connect("localhost","root","");
+mysqli_select_db($con,'iq_tester') or die("plz check database");
+if(isset($_POST['submit']))
+{
+
+}
