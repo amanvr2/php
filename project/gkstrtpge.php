@@ -1,14 +1,14 @@
 <html>
 <head>
 <title> form</title>
-    <link rel="stylesheet" href="engstrtpge.css">
+    <link rel="stylesheet" href="gkstrtpge.css">
   </head>
 <body>
-    <form action="engexam.php" method="post">
+    <form method="POST">
     <ul>
         <li><a href="home.php"> Home</a></li>
     </ul>
-    <h1> ENGLISH </h1>
+    <h1> GENERAL KNOWLEDGE</h1>
     <br>
     <br>
     <br>
@@ -19,4 +19,10 @@
     </form>
     </body>
 </html>
+<?php
+if(isset($_POST['next']))
+{
+    header("location:gkexam.php");
+}
+?>
     

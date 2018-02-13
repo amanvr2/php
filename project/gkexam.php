@@ -6,7 +6,7 @@
 <body>
     <form method="post">
     <ul>
-        <li><a href="training.html"> Home</a></li>
+        <li><a href="home.php"> Home</a></li>
     </ul>
     <h1>
     GENERAL KNOWLEDGE EXAMINATION</h1>
@@ -99,6 +99,6 @@
 <?php
 if(isset($_POST['next']))
 {
-    header("location:engstrtpge.html");
+    header("location:engstrtpge.php");
 }
 ?>

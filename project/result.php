@@ -5,7 +5,7 @@
   </head>
 <body>
     <ul>
-        <li><a href="training.html"> Home</a></li>
+        <li><a href="home.php"> Home</a></li>
     </ul>
     <h1> RESULTS</h1>
     <br>

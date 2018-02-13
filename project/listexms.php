@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="listexms.css">
   </head>
 <body>
-    <form action ="csstrtpage.html" method="POST">
+    <form action ="csstrtpage.php" method="POST">
     <ul>
         <li><a href="home.php"> Home</a></li>
     </ul>

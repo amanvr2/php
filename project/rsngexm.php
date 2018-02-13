@@ -6,7 +6,7 @@
 <body>
     <form method="post">
     <ul>
-        <li><a href="training.html"> Home</a></li>
+        <li><a href="home.php"> Home</a></li>
     </ul>
     <h1>
     REASONING EXAMINATION</h1>

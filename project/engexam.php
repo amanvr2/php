@@ -100,6 +100,6 @@
 <?php
 if(isset($_POST['next']))
 {
-    header("location:reasoningstrtpge.html");
+    header("location:reasoningstrtpge.php");
 }
 ?>

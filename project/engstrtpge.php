@@ -1,14 +1,14 @@
 <html>
 <head>
 <title> form</title>
-    <link rel="stylesheet" href="rsngstrtpge.css">
+    <link rel="stylesheet" href="engstrtpge.css">
   </head>
 <body>
-    <form action="rsngexm.php" method="post">
+    <form method="POST">
     <ul>
-        <li><a href="training.html"> Home</a></li>
+        <li><a href="home.php"> Home</a></li>
     </ul>
-    <h1> REASONING </h1>
+    <h1> ENGLISH </h1>
     <br>
     <br>
     <br>
@@ -19,4 +19,9 @@
     </form>
     </body>
 </html>
-    
+<?php
+if(isset($_POST['next']))
+{
+    header("location:engexam.php");
+}
+    ?>

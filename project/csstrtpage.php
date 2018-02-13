@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="csstrtpage.css">
   </head>
 <body>
-    <form action="csexm.html" method="post">
+    <form action="csexm.php" method="post">
     <ul>
         <li><a href="home.php"> Home</a></li>
     </ul>

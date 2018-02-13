@@ -8,7 +8,7 @@
         <li><a href="home.php"> Home</a></li>
         <li><a href="signup.php"> Register</a></li>
         <li><a href="login.php"> Log in</a></li>
-        <li><a href="forget.html"> Forget password</a></li>
+        <li><a href="forget.php"> Forget password</a></li>
   <li><a href="#">Admin</a></li>
         <li><a href="#">online exam</a></li>
   <li><a href="#about">About us</a></li>

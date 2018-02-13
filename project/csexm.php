@@ -102,15 +102,9 @@
 <?php
 if(isset($_POST['next']))
 {
-    $marks = 0;
-    $r1 = $_POST['r1'];
-    $a1 = 256;
-    if($r1 == $a1)
-    {
-        $marks = +5;
-    }
-    echo"Marks",$marks;
-//header("location:gkstrtpge.html");
+    
+header("location:gkstrtpge.php");
 }
+
 
 ?>
