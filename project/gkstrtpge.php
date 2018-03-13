@@ -20,6 +20,7 @@
     </body>
 </html>
 <?php
+
 if(isset($_POST['next']))
 {
     header("location:gkexam.php");

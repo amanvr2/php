@@ -9,11 +9,14 @@
   <li><a class="active" href="home">Home</a></li>
   <li><a href="signup.php"> Register</a></li>
         <li><a href="login.php"> Log in</a></li>
-        <li><a href="forget.php"> Forget password</a></li>
   <li><a href="#">Admin</a></li>
         <li><a href="#">online exam</a></li>
   <li><a href="#about">About us</a></li>
+        <li><a href="result.php">Check Result</a>
+        </li>
+         
 </ul>
+    
 <h1> IQ TESTER</h1>
     <h2> * What is online examination ?</h2>
     <p>

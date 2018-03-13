@@ -14,15 +14,20 @@
         <li><a href="#">online exam</a></li>
   <li><a href="#about">About us</a></li>
     </ul>
-    <h1> Forget password ?</h1>
+    <h1> CHANGE PASSWORD ?</h1>
     <br>
     <br>
     <br>
     <br>
     <div class="frgt">
-        <label> Username :</label>
+        <label> Username    :</label>
         <input type="text" name="username" placeholder="username@email.com" required><br>
         <br>
+        <label> old password:</label>
+        <input type="password" name="oldpswrd" required>
+        <br><br>
+        <label> new password:</label>
+        <input type="password" name="newpswrd" required>
         <br><br>
        
     </div>
@@ -33,30 +38,19 @@
 <?php
 $con=mysqli_connect("localhost","root","");
 mysqli_select_db($con,'iq_tester') or die("plz check database");
-if(isset($_POST) & !empty($_POST))
+if(isset($_POST['submit']))
 {
-    $username=mysqli_real_escape_string($con,$_POST['username']);
-    $sql="select * from register where username='$username'";
-    $res=mysqli_query($con,$sql);
-    $count=mysqli_num_rows($res);
-    if($count==1)
+    $username=$_POST['username'];
+    $old_password=$_POST['oldpswrd'];
+    $new_password=$_POST['newpswrd'];
+    $query= mysqli_query($con,"update register set PASSWORD =$new_password where username='$username' and PASSWORD='$old_password'");
+    if($query==1)
     {
-        $r=mysqli_fetch_assoc($res);
-        $password=$r['password'];
-        $to=$r['username'];
-        $subject="your recovered password";
-        $message="please use this password to login".$password;
-        $headers="from:amanvr2@gmail.com";
-        if(mail($to,$subject,$message,$headers))
-        {
-            echo"your password has been sent to your email id";
-        }
-        else{
-            echo"username doesnot exist in database";
-            
-        }
-    
+        echo"<script>alert('password successfully updated')</script>";
     }
-    
+    else
+    {
+        echo" <script>alert('user and pass not valid')</script>";
+    }
 }
-?>
+    ?>

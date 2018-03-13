@@ -8,7 +8,7 @@
         <li><a href="home.php"> Home</a></li>
         <li><a href="signup.php"> Register</a></li>
         <li><a href="login.php"> Log in</a></li>
-        <li><a href="forget.php"> Forget password</a></li>
+      
   <li><a href="#">Admin</a></li>
         <li><a href="#">online exam</a></li>
   <li><a href="#about">About us</a></li>
@@ -28,6 +28,7 @@
        
     </div>
     <input type="submit" name="submit"  class="button" value="log_in">
+        <a href="forget.php"> Forget password ?</a>
     </form>
         </body>
 </html>
@@ -42,7 +43,9 @@ $username=$_POST['username'];
     $row = mysqli_num_rows($query);
     if($row==1)
     {
-        
+       session_start();
+        $_SESSION['username']=$username;
+        $_SESSION['pswrd']=$password;
         header("location:listexms.php");
     }
     else

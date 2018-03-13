@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="aptitudestrtpge.css">
   </head>
 <body>
-    <form action="aptitudeexm.php" method="post">
+    <form method="post">
     <ul>
         <li><a href="home.php"> Home</a></li>
     </ul>
@@ -19,4 +19,9 @@
         </form>
     </body>
 </html>
-    
+<?php
+if(isset($_POST['next']))
+{
+    header("location:aptitudeexm.php");
+}
+    ?>
